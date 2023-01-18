@@ -1,14 +1,21 @@
 import React from 'react'
 
 export default function Arrays() {
-     const name = ['pooja', 'rishita', 'sakshi'];
+  const cart = [
+    [1,2,3],
+    [4,5,6]
+  ];
   return (
-    
-        <ul>
-      {name.map(name => (
-        <li key={name}>{name}</li>
-      ))}
-    </ul>
-    
-  )
+    <div>
+      {cart.map((items) => {
+        return (
+          <ul>
+            {items.map((subItems) => {
+              return <li> {subItems} </li>;
+            })}
+          </ul>
+        );
+      })}
+    </div>
+  );
 }
