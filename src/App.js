@@ -6,5 +6,4 @@ function App() {
     <Arrays/>
   );
 }
-
 export default App;
